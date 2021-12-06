@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+                name="viewmodel"
+                type="com.macrosoft.reminder.viewmodel.CreateAccountViewModel"/>
+    </data>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:id="@+id/CreateAccImg"
+                android:layout_width="116dp"
+                android:layout_height="107dp"
+                app:srcCompat="@drawable/user_icon_img"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="42dp"
+                android:contentDescription="@string/icon_create_account"/>
+
+        <EditText
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:text="@={viewmodel.displayNameContent}"
+                android:hint="@string/enter_name"
+                tools:ignore="Autofill"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/EnterName"
+                android:layout_marginTop="170dp"/>
+
+        <EditText
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:text="@={viewmodel.userIdContent}"
+                android:hint="@string/create_your_id"
+                android:id="@+id/CreateAccInput"
+                android:layout_marginStart="0dp"
+                tools:ignore="Autofill"
+                android:layout_below="@+id/EnterName"
+                android:layout_marginTop="6dp"
+                android:layout_alignStart="@+id/EnterName"/>
+
+        <EditText
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                tools:ignore="Autofill"
+                android:text="@={viewmodel.passwordContent}"
+                android:hint="@string/create_your_password"
+                android:id="@+id/CreatePasswordInput"
+                android:layout_alignStart="@+id/CreateAccInput"
+                android:layout_marginStart="0dp"
+                android:layout_below="@+id/CreateAccInput"
+                android:layout_marginTop="6dp"/>
+
+        <EditText
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                tools:ignore="Autofill"
+                android:text="@={viewmodel.repeatPasswordContent}"
+                android:layout_centerHorizontal="true"
+                android:hint="@string/re_enter_your_password"
+                android:id="@+id/confirm_pass"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/CreatePasswordInput"/>
+
+        <com.google.android.material.button.MaterialButton
+                android:text="@string/create_account"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/createAccButton"
+                android:onClick="@{() -> viewmodel.onCreateAccountClick()}"
+                android:layout_marginBottom="84dp"
+                android:textStyle="bold"
+                android:background="@color/green"
+                android:textColor="@color/white"
+                app:cornerRadius="50dp"
+                android:fontFamily="@font/moonchild"
+                android:padding="5dp"
+                android:textSize="25sp"
+        />
+
+        <TextView
+                android:text="@string/acc_exist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/goToLogin"
+                android:onClick="@{() -> viewmodel.onShowLoginClick()}"
+                android:layout_marginBottom="42dp"
+                android:textStyle="italic|bold"
+                android:textSize="16sp"/>
+
+        <ImageView
+                android:layout_width="42dp"
+                android:layout_height="45dp"
+                app:srcCompat="@drawable/pen_img"
+                android:id="@+id/userNameIcon"
+                android:layout_alignStart="@+id/createAccButton"
+                android:layout_toStartOf="@id/EnterName"
+                android:layout_alignTop="@+id/EnterName"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:contentDescription="@string/a_feather"/>
+
+        <ImageView
+                android:layout_width="42dp"
+                android:layout_height="45dp"
+                app:srcCompat="@drawable/user_icon_img"
+                android:id="@+id/userIdIconImg"
+                android:layout_alignStart="@+id/createAccButton"
+                android:layout_toStartOf="@id/CreateAccInput"
+                android:layout_alignTop="@+id/CreateAccInput"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:contentDescription="@string/user_icon"/>
+
+        <ImageView
+                android:layout_width="42dp"
+                android:layout_height="45dp"
+                app:srcCompat="@drawable/lock_icon_img"
+                android:layout_alignTop="@id/CreatePasswordInput"
+                android:layout_alignStart="@id/createAccButton"
+                android:layout_toStartOf="@id/CreatePasswordInput"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:contentDescription="@string/lock_icon"/>
+
+        <ImageView
+                android:layout_width="42dp"
+                android:layout_height="45dp"
+                app:srcCompat="@drawable/lock_icon_img"
+                android:layout_alignTop="@id/confirm_pass"
+                android:layout_alignStart="@+id/createAccButton"
+                android:layout_toStartOf="@id/confirm_pass"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:contentDescription="@string/lock_icon"/>
+
+    </RelativeLayout>
+</layout>

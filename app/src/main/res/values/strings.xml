@@ -1,0 +1,109 @@
+<resources>
+
+    <string name="app_name">MediMate</string>
+    <string name="create_account">Create Account</string>
+    <string name="acc_exist">
+        <u>Already have an account? Click here to Log in!</u>
+    </string>
+    <string name="enter_name">Enter your full name</string>
+    <string name="add_med">Add Reminder</string>
+    <string name="time">Time</string>
+    <string name="med_name">Medicine name</string>
+    <string name="dosage">Add dosage</string>
+    <string name="req_info_field">Add requirements</string>
+    <string name="schedule">Schedule</string>
+    <string name="add_schedule">Add Schedule</string>
+    <string name="edit_schedule">Edit Schedule</string>
+    <string name="alarm_type">Alarm type</string>
+    <string name="save_med">Save Reminder</string>
+    <string name="delete_med">Delete Reminder</string>
+    <string name="select_start_date">Select start date</string>
+    <string name="select_end_date">Select end date</string>
+    <string name="select_frequency">Select frequency</string>
+    <string name="set_alarm">Set Alarm</string>
+    <string name="dosage_info">Dosage history over the last three months</string>
+    <string name="date_of_pills_taken">Date</string>
+    <string name="click_here_to_create_an_account">
+        <u>Click here to create an account!</u>
+    </string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_id">Enter ID</string>
+    <string name="medimate_logo">MediMate: Logo</string>
+    <string name="user_icon_image">User icon image</string>
+    <string name="lock_icon_image">Lock icon image</string>
+    <string name="create_your_id">Create your ID</string>
+    <string name="create_your_password">Create your password</string>
+    <string name="re_enter_your_password">Re-enter your password</string>
+    <string name="icon_create_account">Icon: Create Account</string>
+
+    <string name="go_create_acc">➤ Click here to create your account!</string>
+    <string name="create_ID">Create your ID</string>
+    <string name="create_pass">Create your password</string>
+    <string name="confirm_pass">Re-enter your password</string>
+    <string name="pill">Medicine Name</string>
+    <string name="view_med_dosage">Dosage:</string>
+    <string name="pill_amount">Num of pills</string>
+    <string name="requirements">Requirements:</string>
+    <string name="req_info">Information</string>
+
+    <string-array name="times_to_take_medicine">
+        <item>Once a day</item>
+        <item>Twice a day</item>
+        <item>3 times a day</item>
+        <item>4 times a day</item>
+        <item>5 times a day</item>
+        <item>6 times a day</item>
+        <item>7 times a day</item>
+        <item>8 times a day</item>
+        <item>9 times a day</item>
+        <item>10 times a day</item>
+        <item>Custom</item>
+    </string-array>
+    
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_title">Login</string>
+    <string name="my_medicines_title">My Medicines</string>
+    <string name="create_account_title">Create Account</string>
+    <string name="edit">Edit</string>
+    <string name="add_reminder">Add Reminder</string>
+    <string name="decorative_image_medicine_box_and_pill">Medicine box and pill</string>
+    <string name="decorative_image_medicine_doser">Medicine doser</string>
+    <string name="a_box_of_vegetables">A box of vegetables</string>
+    <string name="calendar_image">Calendar image</string>
+    <string name="alarm_image">Alarm image</string>
+    <string name="splash_screen">SPLASH SCREEN</string>
+    <string name="a_feather">A feather</string>
+    <string name="user_icon">User icon</string>
+    <string name="lock_icon">Lock icon</string>
+    <string name="medimate_logo_string">MediMate logo</string>
+    <string name="add_button_logo">Add button logo</string>
+    <string name="log_in">LOG IN</string>
+    <string name="edit_card">Click to make changes</string>
+    <string name="reminders">Reminders</string>
+    <string name="mo">MO</string>
+    <string name="tu">TU</string>
+    <string name="we">WE</string>
+    <string name="th">TH</string>
+    <string name="fr">FR</string>
+    <string name="sa">SA</string>
+    <string name="su">SU</string>
+    <string name="save">SAVE</string>
+
+
+
+    <!-- faq page strings -->
+    <string name="faq_title">FAQ</string>
+
+
+    <string name= "a1">On the start screen select the create account option under the log in button </string>
+    <string name= "q1">How do I create an account?</string>
+
+    <string name="a2">Go to My Medicines, Edit, fill in the page and click save reminder</string>
+    <string name="q2">How do I create a reminder?</string>
+
+    <string name="a3">Medimate allows you to create reminders to take with certain foods or drinks</string>
+    <string name="q3">What if I have to have food with certain medicines?</string>
+    <string name="text">Answer:</string>
+
+
+</resources>
